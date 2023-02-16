@@ -18,7 +18,5 @@ class Azamatovich extends Azamat{
   String makeCoffee() {
     return "My father is not there, but here is your coffee";
   }
-
-
 }
 

@@ -14,7 +14,9 @@ class MoneyBox{
   MoneyBox({required this.capacity});
 
   void add(Money money){
-    _money.add(money);
+    if(!(getAmount()+money.amount>capacity)) {
+      _money.add(money);
+    }
   }
 
   bool isEmpty(){
